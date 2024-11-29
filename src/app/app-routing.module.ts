@@ -3,12 +3,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'validar-correo',
+    loadChildren: () => import('./validar-correo/validar-correo.module').then( m => m.ValidarCorreoPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'validar-correo',
     pathMatch: 'full'
   },
 ];
